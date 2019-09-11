@@ -1,0 +1,2 @@
+#!/bin/bash
+file -z /temp/iamafile
