@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "Shell, permissions"
+git push origin master
