@@ -3,5 +3,5 @@
 
 while read -r file
 do
-    echo "$file" | cut -d : -f1,4,6
+    echo "$file"
 done < /etc/passwd
