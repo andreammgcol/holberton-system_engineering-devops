@@ -11,10 +11,10 @@ import sys
 if __name__ == "__main__":
     """ That returns information about his/her TODO list progress """
     ID = int(sys.argv[1])
-    h_user = "https://jsonplaceholder.typicode.com/users/{}".format(ID)
-    h_TODO = "https://jsonplaceholder.typicode.com/todos?userId={}".format(ID)
-    user = requests.get(h_user).json()
-    TODO = requests.get(h_TODO).json()
+    urlUser = "https://jsonplaceholder.typicode.com/users/{}".format(ID)
+    urlTODO = "https://jsonplaceholder.typicode.com/todos?userId={}".format(ID)
+    user = requests.get(urlUser).json()
+    TODO = requests.get(urlTODO).json()
 
     list_tasks = []
     for task in TODO:
@@ -24,4 +24,4 @@ if __name__ == "__main__":
           len(list_tasks), len(TODO)))
 
     for task in list_tasks:
-        print("\t {}".format(task))
+        print(" \t{}".format(task))
