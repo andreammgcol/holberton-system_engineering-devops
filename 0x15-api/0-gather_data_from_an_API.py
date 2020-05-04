@@ -24,4 +24,4 @@ if __name__ == "__main__":
           len(list_tasks), len(TODO)))
 
     for task in list_tasks:
-        print(" \t{}".format(task))
+        print("\t {}".format(task))
