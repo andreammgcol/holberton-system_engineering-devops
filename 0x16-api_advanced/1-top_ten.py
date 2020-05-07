@@ -6,8 +6,8 @@ import requests
 
 def top_ten(subreddit):
     """
-        That returns the number of subscribers for a given subreddit.
-        If an invalid subreddit is given, the function should return 0.
+        That prints the titles of the first 10 hot posts listed for a given
+        subreddit. If not a valid subreddit, print None.
     """
     url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     header = {'user-agent': 'X-Modash'}
